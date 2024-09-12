@@ -10,6 +10,12 @@ createApp({
     };
   },
 
+  computed: {
+    emailsCompleted() {
+      return this.emails.length === 10;
+    },
+  },
+
   methods: {
     // Define a function to get response from bollean url by API response
     getRandomEmail() {

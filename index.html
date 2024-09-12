@@ -32,7 +32,7 @@
         <section>
             <h3>List of 10 generated email from Boolean API</h3>
             <!-- Email List  -->
-            <ul>
+            <ul v-if="emailsCompleted">
                 <li v-for="(email,i) in emails">Email {{i+1}} => {{email}} </li>
             </ul>
         </section>
