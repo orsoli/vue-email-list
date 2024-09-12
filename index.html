@@ -33,7 +33,7 @@
             <h3>List of 10 generated email from Boolean API</h3>
             <!-- Email List  -->
             <ul>
-                <li>email</li>
+                <li v-for="(email,i) in emails">Email {{i+1}} => {{email}} </li>
             </ul>
         </section>
 
